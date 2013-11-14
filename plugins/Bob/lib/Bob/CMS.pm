@@ -103,7 +103,7 @@ sub edit_job {
     }
     else {
         my @blogs_loop;
-        my @blogs = MT::Blog->load();
+        my @blogs = MT::Blog->load({ class => '*', });
         foreach my $blog (@blogs) {
             my $row;
             $row->{blog_id}   = $blog->id;

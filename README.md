@@ -5,16 +5,17 @@ published: the entry, a category archive, monthly archive, and main index, for
 example. Often in large multiblog installs, however, circumstances arise where
 some templates aren't republished when needed.
 
-Bob the Rebuilder provides a way to republish a blog (or a part of a blog) on a
-recurring schedule. For example, create a job to republish an entire blog every
-24 hours, or create a job to republish all index archives every 10 minutes. An
-unlimited number of jobs can be created to republish any blog (or part of it)
-according to a number of set frequency choices.
+Bob the Rebuilder provides a way to republish a blog or website (or a part of a
+blog or website) on a recurring schedule. For example, create a job to
+republish an entire blog every 24 hours, or create a job to republish all index
+archives every 10 minutes. An unlimited number of jobs can be created to
+republish any blog (or part of it) according to a number of set frequency
+choices.
 
 
 # Prerequisites
 
-* Movable Type 4.x or 5.1+
+* Movable Type 5.1+
 * `run-periodic-tasks` must be running
 
 
@@ -27,12 +28,12 @@ http://tinyurl.com/easy-plugin-install
 
 # Configuration
 
-Bob the Rebuilder is configured at the System level (Tools > Rebuilder in MT5;
-Manage > Rebuilder in MT4). "Jobs" are used to rebuild a blog or part of a blog
-on a schedule, and can be enabled or disabled as needed.
+Bob the Rebuilder is configured at the System level (Tools > Rebuilder). "Jobs"
+are used to rebuild a website/blog or part of a website/blog on a schedule, and
+can be enabled or disabled as needed.
 
-"Create a rebuilder job" to get started: specify a blog, what you want to
-republish, its frequency, and save it. Done!
+"Create a rebuilder job" to get started: specify a website or blog, what you
+want to republish, its frequency, and save it. Done!
 
 It's important to be aware of the load you may be placing on the server -- many
 jobs each republishing an entire blog every few minutes is goint to take a lot
